@@ -15,7 +15,6 @@ export default class Paginations extends Component {
 
 
     loadCommentsFromServer() {
-        alert('update request')
         this.props.PageHandler(this.state.page)
     }
 
