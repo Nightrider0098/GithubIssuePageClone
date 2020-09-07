@@ -35,8 +35,8 @@ export default class Paginations extends Component {
         return (
             <div id="react-paginate">
                 <ReactPaginate
-                    previousLabel={'previous'}
-                    nextLabel={'next'}
+                    previousLabel={'< Previous'}
+                    nextLabel={'Next >'}
                     breakLabel={'...'}
                     breakClassName={'break-me'}
                     pageCount={this.state.pageCount}

@@ -23,6 +23,9 @@ export class newIssueButton extends Component {
         fetch('http://localhost:5400/add-issue', requestOptions).then(res => { return res.json() }).then(res => {
             document.getElementById('closeModal').click()
         })
+        this.props.refreshPage(undefined)
+
+
 
     }
 
@@ -37,7 +40,7 @@ export class newIssueButton extends Component {
         return (
             <React.Fragment>
                 <button type="button" className="btn btn-success ml-2" data-toggle="modal" data-target="#exampleModal">New Issue</button>
-                <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog" role="document">
                         <div className="modal-content">
                             <div className="modal-header pb-0">
